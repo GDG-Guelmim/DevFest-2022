@@ -4,9 +4,9 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
-  { title: "Showcase", url: "#showcase" },
+  { title: "Venue", url: "#intro" },
+  { title: "Sessiosns", url: "#Talks" },
+  { title: "Organizers", url: "#organizers" },
 ];
 ---
 
@@ -15,11 +15,9 @@ const navItems: Array<NavItem> = [
   class="absolute bottom-0 z-20 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent"
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <!-- <h1 class="sr-only">Astro</h1> -->
-    <!-- <Icon name="logomark" class="h-10" /> -->
-    <!-- <Icon name="a" class="hidden h-4 sm:block" /> -->
     <img src="/src/assets/Logo.png" alt="GDG-Guelmim-LOGO" class="h-12" >
     <!-- <img src="/src/assets/GDG-Guelmim.png" alt="GDG-Guelmim-LOGO" class="h-10" > -->
+    <p style="font-family: sans-serif;" class="font-bold">  GDG Guelmim</p>
   </a>
   <div>
     <div class="flex items-center gap-6">

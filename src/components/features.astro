@@ -5,50 +5,57 @@ import type { FeatureItem } from "~/types";
 
 const features: Array<FeatureItem> = [
   {
-    title: "Bring Your Own Framework",
+    title: "Cloud",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "mdi:handshake",
+      "Devops",
+    icon: "mdi:cloud",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Software architecture",
     description:
       "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "mdi:feather",
+    icon: "mdi:code",
   },
   {
-    title: "On-Demand Components",
+    title: "Mobile development",
     description:
       "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page. If the user never sees it, they never load it.",
-    icon: "mdi:directions-fork",
+    icon: "mdi:smartphone",
   },
   {
-    title: "Broad Integration",
+    title: "Artificial intelligence",
     description:
       "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any of your favorite npm packages.",
-    icon: "mdi:graph",
+    icon: "mdi:brain",
   },
   {
-    title: "SEO Enabled",
+    title: "Web development",
     description:
       "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication.",
-    icon: "mdi:search-web",
+    icon: "mdi:web",
   },
   {
-    title: "Community",
+    title: "Security",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "mdi:account-group",
-  },
+      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication.",
+    icon: "mdi:security",
+  }
+  
 ];
 ---
 
-<ContentSection title="Features" id="features">
-  <Fragment slot="lead">
-    Astro comes <span class="text-primary">batteries included</span>. It takes
-    the best parts of
+<ContentSection title="Sessions" id="Talks">
+  <Fragment slot="lead"> 
+    <span class="text-primary">DevFest-Guelmim </span>
+    is an event held every year, with the purpose of sharing
     <span class="text-primary">state-of-the-art</span>
-    tools and adds its own <span class="text-primary">innovations</span>.
+    tools and techs with the 
+    <span class="text-primary"> Community</span> .
+    your spot awaits <a href="https://gdg.community.dev/events/details/google-gdg-guelmim-presents-dev-fest-2022/" class="text-yellow-400 underline hover:text-red-400">Here!!</a>
+    <br>  
+    <br>  
+    <span class="text-primary">Session </span>
+    topics this year are:
   </Fragment>
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
@@ -58,9 +65,11 @@ const features: Array<FeatureItem> = [
             <Icon name={icon} />
           </div>
           <p class="text-xl font-extrabold text-center">{title}</p>
-          <p class="text-sm text-center text-offset">{description}</p>
         </li>
       ))
     }
   </ul>
 </ContentSection>
+<br>
+<!-- the following line can show a topic decription -->
+<!-- <p class="text-sm text-center text-offset">{description}</p> -->

@@ -25,4 +25,5 @@ export interface ShowcaseSite {
   title: string;
   image: ImageMetadata;
   url: string;
+  url1:string;
 }

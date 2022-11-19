@@ -1,6 +1,7 @@
 ---
 import { Picture } from "@astrojs/image/components";
 import type { ShowcaseSite } from "~/types";
+import { Icon } from "astro-icon";
 
 export interface Props {
   site: ShowcaseSite;
@@ -8,18 +9,19 @@ export interface Props {
 
 const { site } = Astro.props;
 
-const widths = [450, 800];
-const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
+const widths = [1000, 1000];
+const sizes = "(min-width: 1024px) 15vw, (min-width: 768px) 10vw, 100vw";
+
 ---
 
-<a class="group aspect-video hover:!text-default" href={site.url}>
+<div class="group aspect-square hover:!text-default" >
   <figure class="relative w-full h-full overflow-hidden">
     <Picture
-      class="object-cover w-full h-full transition-all duration-300 bg-cover group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      class="object-cover w-full h-full transition-all duration-300 bg-cover  group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20 rounded-lg "
       src={site.image}
       widths={widths}
       sizes={sizes}
-      alt={`A screenshot of ${site.url}`}
+      alt=""
     />
     <figcaption class="absolute inset-0">
       <div
@@ -28,8 +30,12 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
         <h3 class="text-xl font-extrabold text-center uppercase">
           {site.title}
         </h3>
-        <p class="px-4 py-2 border border-current">{site.url}</p>
+        <!-- <p class="px-4 py-2 border border-current">{site.url}</p> -->
+        <div class="inline-flex">
+          <a  class="mr-5" href={site.url}><Icon class="w-10	h-10" name="fa-brands:linkedin" /></a>
+          <a class="" href={site.url1}><Icon class="w-10	h-10" name="fa-brands:twitter" /></a>
+        </div>
       </div>
     </figcaption>
   </figure>
-</a>
+</div>

@@ -1,32 +1,21 @@
 [
   {
-    "title": "PoliNations",
-    "image": "./images/polinations.png",
-    "url": "https://polinations.com/"
+    "title": "Ayoub",
+    "image": "./images/ayoub.jpg",
+    "url": "https://www.linkedin.com/in/ayoub-bouihrouchane/",
+    "url1": ""
+    
   },
   {
-    "title": "Astro Docs",
-    "image": "./images/astro-docs.png",
-    "url": "https://docs.astro.build/"
+    "title": "Mariam",
+    "image": "./images/mariam.jpg",
+    "url": "https://www.linkedin.com/in/mariam-elkatmour/",
+    "url1": "https://twitter.com/ayoub_bouih"
   },
   {
-    "title": "<div>RIOTS",
-    "image": "./images/divriots.png",
-    "url": "https://divriots.com/"
-  },
-  {
-    "title": "Designcember",
-    "image": "./images/designcember.png",
-    "url": "https://designcember.com/"
-  },
-  {
-    "title": "The Firebase Blog",
-    "image": "./images/firebase-blog.png",
-    "url": "https://firebase.blog/"
-  },
-  {
-    "title": "Corset",
-    "image": "./images/corset.png",
-    "url": "https://corset.dev/"
+    "title": "Abdelfattah",
+    "image": "./images/abdelfattah.jpg",
+    "url": "https://www.linkedin.com/in/hilmi-abdelfattah/",
+    "url1": "https://twitter.com/Hilmi_Abdel"
   }
 ]
