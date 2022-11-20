@@ -1,14 +1,8 @@
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
-# Astro Landing Page
+# DevFest Guelmim Landing Page
 
-> An Astro + Tailwind CSS example/template for landing pages.
-
-
-## Features
-
-- 💨 Tailwind CSS for styling
-- 🎨 Themeable
+> GDG Guelmim's 2022 DevFest page Built with Astro and Tailwind CSS 
   - CSS variables are defined in `src/styles/theme.css` and mapped to Tailwind classes (`tailwind.config.cjs`)
 ## Commands
 
