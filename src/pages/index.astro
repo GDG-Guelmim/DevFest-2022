@@ -12,14 +12,17 @@ const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
   "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+
+const src="https://storage.googleapis.com/publicastro/gdglogo.png"
 ---
+
 
 <!DOCTYPE html>
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="src/data/showcase/images/gdglogo.png" />
+    <link rel="icon" href={src} />
     <!-- <meta name="generator" content={generator} /> -->
 
     <title>DevFest Guelmim</title>
