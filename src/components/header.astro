@@ -8,6 +8,7 @@ const navItems: Array<NavItem> = [
   { title: "Venue", url: "#intro" },
   { title: "Sessiosns", url: "#Talks" },
   { title: "Organizers", url: "#organizers" },
+  { title: "Secure a spot", url: "https://gdg.community.dev/events/details/google-gdg-guelmim-presents-dev-fest-2022/" },
 ];
 
 const src = "https://storage.googleapis.com/publicastro/gdglogo.png"
@@ -28,13 +29,13 @@ const src = "https://storage.googleapis.com/publicastro/gdglogo.png"
       <nav class="hidden sm:block">
         <ul class="flex items-center gap-6">
           {
-            navItems.map(({ title, url }) => (
+            navItems.map(({ title, url }) => (url[0]=="#")?(
               <li>
                 <a class="text-sm" href={url}>
                   {title}
                 </a>
               </li>
-            ))
+            ): <a class="bg-transparent hover:bg-yellow-400 text-yellow-400 font-semibold hover:text-white py-1 px-4  border-tranparent rounded" href={url}>{title}</a> )
           }
         </ul>
       </nav>
@@ -68,13 +69,15 @@ const src = "https://storage.googleapis.com/publicastro/gdglogo.png"
           <nav>
             <ul class="flex flex-col">
               {
-                navItems.map(({ title, url }) => (
+                navItems.map(({ title, url }) => (url[0]=="#")?(
                   <li>
                     <a class="block py-4 text-xl text-center" href={url}>
                       {title}
                     </a>
                   </li>
-                ))
+                ):<a class="block py-4 text-xl text-center text-white bg-yellow-400 rounded " href={url}>
+                      {title}
+                    </a>)
               }
             </ul>
           </nav>
